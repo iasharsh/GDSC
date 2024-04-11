@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="shortcut icon" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png" type="image/x-icon">
+</head>
+
+<body>
+    <body>
+        <div class="flex flex-row justify-center gap-2 bg-black text-white">
+            <aside
+                class="lg:max-w-[25em]   rounded-lg min-h-[50vh] px-2 pt-2 flex flex-col gap-2 bg-[rgb(18,18,18)] snap-y overscroll-contain ">
+                <div class="">
+                    <div class="overflow-hidden float-left">
+    
+                        <div class="flex flex-col gap-2 box-border px-4 py-3 bg-[rgb(18,18,18)] rounded-lg text-[1.2rem]">
+                            <div class="flex flex-row place-items-center gap-2  cursor-pointer">
+                                <i class="fa-brands fa-spotify text-3xl text-green-500  "></i>
+                                <h1 class="text-2xl font-bold">Spotify</h1>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="flex flex-row items-center gap-2 cursor-pointer">
+                                    <i class="fas fa-home"></i>
+                                    <span>Home</span>
+                                </div>
+                                <div class="flex flex-row items-center gap-2 cursor-pointer text-[rgb(164,164,164)]">
+                                    <i class="fas fa-search"></i>
+                                    <span>Search</span>
+                                </div>
+                                <!-- <div class="flex flex-row items-center gap-2 cursor-pointer">
+                            <i class="fas fa-bookmark"></i>
+                            <span>Your Library</span>
+                        </div> -->
+                            </div>
+                        </div>
+                        <div class="flex flex-col  box-border px-4 py-3 bg-[rgb(18,18,18)] rounded-lg text-[1.2rem] ">
+                            <div
+                                class=" flex         flex-row justify-between items-center  cursor-pointer text-[1.4rem] text-[rgb(164,164,164)]  ">
+                                <div class="flex flex-row items-center gap-2 cursor-pointer">
+                                    <i class="fa-solid fa-book-bookmark"></i>
+                                    <div class="">Your Library</div>
+                                </div>
+                                <div class="self-end"><i class="fa-solid fa-plus"></i></div>
+    
+                            </div>
+                            <div class="flex flex-col w-fit py-2 gap-2 ">
+    
+                                <!-- Playlist Card -->
+                                <div class="bg-[rgb(36,36,36)] rounded-lg shadow-md p-2">
+                                    <h2 class="text-md font-bold mb-4">Create your first playlist</h2>
+                                    <p class="text-gray-400">It's easy, we'll help you</p>
+                                    <button class="  py-1 px-4  mt-2 rounded-full bg-white font-bold  text-sm  text-black">
+                                        Create Playlist
+                                    </button>
+                                </div>
+    
+                                <!-- Podcast Card -->
+                                <div class="bg-[rgb(36,36,36)] rounded-lg shadow-md p-2">
+                                    <h2 class="text-md font-bold mb-4">Let's find some podcasts to follow</h2>
+                                    <p class="text-gray-400">We'll keep you updated on new episodes</p>
+                                    <button class="py-1 px-4  mt-2 rounded-full bg-white font-bold  text-sm  text-black">
+                                        Browse Podcasts
+                                    </button>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="">
+                            <div class="flex pl-3 pt-1  space-x-4 text-sm text-gray-400">
+                                <a href="#" class="hover:text-gray-400 cursor-pointer">Legal</a>
+                                <a href="#" class="hover:text-gray-400 cursor-pointer">Safety & Privacy Center</a>
+                                <a href="#" class="hover:text-gray-400 cursor-pointer">Privacy Policy</a>
+                                <a href="#" class="hover:text-gray-400 cursor-pointer">Cookies</a>
+                            </div>
+    
+                            <div class="flex pl-3 pt-1  space-x-4 text-sm text-gray-400">
+                                <a href="#" class="hover:text-gray-400 cursor-pointer">About Ads</a>
+                                <a href="#" class="hover:text-gray-400 cursor-pointer">Accessibility</a>
+                            </div>
+    
+                            <div class="pl-3  pt-1  text-gray-400 text-sm cursor-pointer">
+                                Cookies
+                            </div>
+    
+                            <div class="px-4 mt-7">
+                                <button
+                                    class="cursor-pointer px-4 py-2 border-solid border-white border-[2px] rounded-full">
+                                    <span class="mr-2 text-white">🌐</span> English
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </aside>
+            <main class="flex-1  border-solid border-[1px] border-black  rounded-lg min-h-[100vh] py-2">
+                <div class="flex flex-col">
+                    <nav class="flex flex-row gap-2 px-4 justify-between over">
+                        <div class="flex place-items-center gap-2 text-[rgb(153,149,149)] text-md ">
+                            <i
+                                class="fa-solid fa-greater-than fa-rotate-180 bg-transparent rounded-full p-2 cursor-pointer"></i>
+                            <i class="fa-solid fa-greater-than bg-transparent rounded-full p-2 cursor-pointer"></i>
+    
+                        </div>
+                        <div class="flex flex-row gap-2">
+                            <button
+                                class="border-solid border-white border-[2px] bg-black text-white rounded-lg cursor-pointer px-6 py-2">Sign
+                                up</button>
+                            <button
+                                class="border-solid border-white border-[2px] bg-white text-black  rounded-lg cursor-pointer px-6 py-2">Log
+                                in</button>
+                        </div>
+                    </nav>
+                    <section class="flex flex-col gap-12">
+                        <section id="artists" class="flex flex-col gap-12 pl-3 pt-2">
+                            <nav class="flex flex-row justify-between pl-2 pr-4">
+                                <div class="text-white font-bold text-lg ">Popular Artists</div>
+                                <div class="underline text-[rgb(150,150,150)]">Show All</div>
+                            </nav>
+                            <main class="flex flex-row flex-nowrap scroll-smooth gap-2  ">
+                                <div class="flex flex-row  justify-evenly flex-nowrap overflow-ellipsis w-[70vw] overflow-x-auto scroll-smooth">
+                                    <div>
+                                        <div class="flex flex-col gap-2">
+                                            <div><img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                            alt="" class="w-[150px] h-[150px] rounded-full"></div>
+                                            <div class="text-sm text-white font-bold pl-2">Pritam</div>
+                                            <div class="text-sm text-gray-400 pl-2">Artist</div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="flex flex-col gap-2">
+                                        <div><img src="https://i.scdn.co/image/ab676161000051740261696c5df3be99da6ed3f3"
+                                                alt="" class="w-[150px] h-[150px] rounded-full"></div>
+                                        <div class="text-sm text-white font-bold pl-2">Arijit Singh</div>
+                                        <div class="text-sm text-gray-400 pl-2">Artist</div>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <div><img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+                                                alt="" class="w-[150px] h-[150px] rounded-full"></div>
+                                        <div class="text-sm text-white font-bold pl-2">A.R. Rahman</div>
+                                        <div class="text-sm text-gray-400 pl-2">Artist</div>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <div><img src="https://i.scdn.co/image/ab67616100005174fc7c542c04b5f7dc8f1b1c16"
+                                                alt="" class="w-[150px] h-[150px] rounded-full"></div>
+                                        <div class="text-sm text-white font-bold pl-2">Anirudh Ravichander</div>
+                                        <div class="text-sm text-gray-400 pl-2">Artist</div>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <div><img src="https://i.scdn.co/image/ab676161000051746220fc5e958ab498b96f5835"
+                                                alt="" class="w-[150px] h-[150px] rounded-full"></div>
+                                        <div class="text-sm text-white font-bold pl-2">Vishal Mishra</div>
+                                        <div class="text-sm text-gray-400 pl-2">Artist</div>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <div><img src="https://i.scdn.co/image/ab67656300005f1fde3404901270d81ee3bbc408"
+                                                alt="" class="w-[150px] h-[150px] rounded-full"></div>
+                                        <div class="text-sm text-white font-bold pl-2">Ranveer Alahbadia</div>
+                                        <div class="text-sm text-gray-400 pl-2">Artist</div>
+                                    </div>
+    
+    
+                                </div>
+    
+    
+                            </main>
+    
+    
+                        </section>
+                        <section id="popular" class="flex flex-col gap-3 pl-3 pt-2">
+                            <nav class="flex flex-row justify-between pl-2 pr-4">
+                                <div class="text-white font-bold text-lg ">Popular albums</div>
+                                <div class="underline text-[rgb(150,150,150)]">Show All</div>
+                            </nav>
+                            <main class="flex flex-row flex-nowrap overflow-x-auto scroll-smooth gap-2 ">
+                                <div class="flex flex-row overflow-x-auto overscroll-contain ">
+                                    <div class="flex flex-col gap-2 w-[10vw]">
+                                        <div><img src="https://i.scdn.co/image/ab67656300005f1f099a357ed0a2a39424f2903d"
+                                                alt="" class="w-[180px] rounded-md"></div>
+                                        <div class="text-sm text-white font-bold pl-2">Rotten</div>
+                                        <div class="text-sm text-gray-400 pl-2">Series</div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row overflow-x-auto overscroll-contain ">
+                                    <div class="flex flex-col gap-2 w-[10vw]">
+                                        <div><img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9"
+                                                alt="" class="w-[180px] rounded-md"></div>
+                                        <div class="text-sm text-white font-bold pl-2">Animal</div>
+                                        <div class="text-sm text-gray-400 pl-2">Movie</div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row overflow-x-auto overscroll-contain ">
+                                    <div class="flex flex-col gap-2 w-[10vw]">
+                                        <div><img src="https://i.scdn.co/image/ab67656300005f1f9114d741247e2d26a7b48b6f"
+                                                alt="" class="w-[180px] rounded-md"></div>
+                                        <div class="text-sm text-white font-bold pl-2">Krishna Leela</div>
+                                        <div class="text-sm text-gray-400 pl-2">Album</div>
+                                    </div>
+                                </div>
+    
+    
+                            </main>
+    
+    
+                        </section>
+                        <section id="radio" class="flex flex-col gap-3 pl-3 pt-2">
+                            <nav class="flex flex-row justify-between pl-2 pr-4">
+                                <div class="text-white font-bold text-lg ">Popular radio</div>
+                                <div class="underline text-[rgb(150,150,150)]">Show All</div>
+                            </nav>
+                            <main class="flex flex-row flex-nowrap overflow-x-auto scroll-smooth gap-2 ">
+                                <div class="flex flex-row overflow-x-auto ">
+                                    <div class="flex flex-col gap-2 w-[10vw]">
+                                        <div><img src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06"
+                                                alt="" class="w-[180px] rounded-md"></div>
+                                        <div class="text-sm text-white font-bold pl-2">Kailash Kher</div>
+                                        <div class="text-sm text-gray-400 pl-2">Artist</div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row overflow-x-auto overscroll-contain ">
+                                    <div class="flex flex-col gap-2 w-[10vw]">
+                                        <div><img src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06"
+                                                alt="" class="w-[180px] rounded-md"></div>
+                                        <div class="text-sm text-white font-bold pl-2">Arijit Singh</div>
+                                        <div class="text-sm text-gray-400 pl-2">Artist</div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row overflow-x-auto overscroll-contain ">
+                                    <div class="flex flex-col gap-2 w-[10vw]">
+                                        <div><img src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06"
+                                                alt="" class="w-[180px] rounded-md"></div>
+                                        <div class="text-sm text-white font-bold pl-2">Sonu Nigam</div>
+                                        <div class="text-sm text-gray-400 pl-2">Artist</div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row overflow-x-auto overscroll-contain ">
+                                    <div class="flex flex-col gap-2 w-[10vw]">
+                                        <div><img src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06"
+                                                alt="" class="w-[180px] rounded-md"></div>
+                                        <div class="text-sm text-white font-bold pl-2">Kumar Sanu</div>
+                                        <div class="text-sm text-gray-400 pl-2">Artist</div>
+                                    </div>
+                                </div>
+    
+    
+                            </main>
+    
+    
+                        </section>
+                    </section>
+                </div>
+            </main>
+        </div>
+    
+        <footer class="fixed bottom-0 h-[60px] flex flex-row justify-between   bg-gradient-to-l from-pink-500 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 text-white w-full ">
+            <div class="flex flex-col items-start ">
+                <h3 class="text-md font-bold text-white">Preview of Spotify</h3>
+                <p class="text-white text-sm">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+              </div>
+              <button class="px-4 py-4 bg-white rounded-md text-purple-500 font-bold hover:bg-purple-100 flex place-items-center">Sign up for free</button>
+        </footer>
+</body>
+
+</html>
